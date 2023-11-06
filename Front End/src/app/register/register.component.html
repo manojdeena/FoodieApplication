@@ -1,0 +1,84 @@
+<h1 class="head fs-1"> Sign up to Register...!</h1>
+<div class="container-two">
+
+
+   <mat-card id="card">
+
+      <div class="container">
+
+         <h1 id="heading"><strong> Sign Up</strong> </h1>
+
+         <form class="form"  [formGroup]="profileForm"  >
+
+            <mat-form-field class="field" appearance="outline">
+               <mat-label>Full Name</mat-label> 
+               <input matInput type="text" placeholder="Full Name" formControlName="userName">
+               <mat-error *ngIf="userName?.errors?.['required']">
+                     Name is required
+               </mat-error>
+               <mat-error *ngIf="userName?.errors?.['pattern']">
+                     Name cannot be a number
+               </mat-error>
+            </mat-form-field>
+            
+            <br>
+      
+            <mat-form-field class="field" appearance="outline">
+               <mat-label>Email </mat-label>
+               <input matInput type="email" placeholder="Email" formControlName="userEmail">
+               <mat-error *ngIf="userEmail?.errors?.['required']">
+                  Email is required
+               </mat-error>
+               <mat-error *ngIf="userEmail?.errors?.['pattern']">
+                  Enter a valid emailId (ex: john@gmail.com)
+               </mat-error>
+            </mat-form-field>
+      
+
+            <br>
+
+            <mat-form-field class="field" appearance="outline">
+               <mat-label>Password </mat-label>
+               <input matInput type="password" placeholder="Password" formControlName="userPassword">
+               <mat-error *ngIf="userPassword?.errors?.['required']">
+                  Password is required
+               </mat-error>
+               <mat-error *ngIf="userPassword?.errors?.['pattern']">
+                Password must contain minimum 8 characters with combination of <strong>uppercase , lowercase letter</strong> and <strong>number</strong>
+               </mat-error>
+            </mat-form-field>
+            
+            <br>
+
+            <mat-form-field class="field" appearance="outline">
+               <mat-label>Phone No </mat-label>
+               <input matInput type="text" placeholder="Phone No" formControlName="userPhoneNo">
+               <mat-error *ngIf="userPhoneNo?.errors?.['required']">
+                  Phone No is required
+               </mat-error>
+               <mat-error *ngIf="userPhoneNo?.errors?.['pattern']">
+                   Phone No must start from 7,8 or 9
+               </mat-error>
+            </mat-form-field>
+
+            <br>
+            
+               <input type="file" (change)="onFileSelected($event)" accept="image"  >
+               <button type="submit" (click)="onUpload()" > Upload</button>
+           
+      
+            <div class="example-button-row" >
+               <button class="sub" mat-raised-button [disabled]="!profileForm.valid"  (click)="onSubmit()"   >Submit</button>
+             </div> 
+
+             <!-- <p> If you are already a user <a (click)="openlogin()" matDialogClose>Click here to Login</a></p> -->
+      
+          </form>
+      </div>
+
+    
+
+   </mat-card>
+    
+
+</div>

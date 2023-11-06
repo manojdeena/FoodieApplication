@@ -1,0 +1,33 @@
+<mat-toolbar class="width">
+
+    <a (click)="redirectToHome()" id="anchor">
+        <h1><strong>Crave Craze</strong></h1>
+    </a>
+
+
+
+    <div id="button">
+        <button mat-button (click)="openlogin() " *ngIf="!authService.isLoggedStatus">Log In</button>
+        <button mat-button routerLink="register" *ngIf="!authService.isLoggedStatus">Register</button>
+    </div>
+
+    <div>
+        <button id="profile" mat-button [matMenuTriggerFor]="profile"
+            *ngIf="authService.isLoggedStatus">Welcome</button>
+
+        <mat-button-toggle-group id="category" color="accent" name="favoriteColor">
+            <mat-menu #profile="matMenu">
+                <mat-button-toggle class="raised-Button" routerLink="/favorite">Favorite</mat-button-toggle>
+                <mat-button-toggle class="raised-Button" *ngIf="authService.isLoggedStatus" (click)="logout()">Log Out
+                </mat-button-toggle>
+
+            </mat-menu>
+
+        </mat-button-toggle-group>
+
+        <!-- <p>{{authService.isLoggedStatus}}</p> -->
+
+    </div>
+
+
+</mat-toolbar>

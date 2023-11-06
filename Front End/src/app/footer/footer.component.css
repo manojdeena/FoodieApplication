@@ -1,0 +1,30 @@
+.img{
+    width: 30px;
+    display: flex;
+    /* background-color: rgba(227,55,68,255); */
+   max-height: 10%;
+   height: 30px;
+   margin-left: 47%;
+   margin-top: -45px;
+   
+}
+
+.footer{
+    margin-top: 20%;
+    background-color: rgba(227,55,68,255);
+    display: flex;
+    align-items: center;
+    flex-direction: row ;
+    height: 60px;
+}
+#footer{
+    margin-left: 39%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+#id1,id2,id3{
+    display: inline;
+}
+

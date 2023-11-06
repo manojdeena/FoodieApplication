@@ -1,0 +1,45 @@
+<div class="login">
+    
+
+    <h1><strong>LOG IN</strong> </h1>
+
+        <form class="example-form" #orderForm="ngForm">
+
+            <mat-form-field appearance="outline" class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput required type="text" placeholder="email" name="userEmail" #userEmail="ngModel"  [(ngModel)]="user.userEmail" pattern="^[a-zA-Z_.+-]+[a-zA-Z0-9_.+-]+@[a-zA-Z-]+\.[a-zA-Z-.]+$" >
+
+                <mat-error *ngIf="userEmail.errors?.['required']">
+                    Email cannot be empty 
+               </mat-error>
+
+               <mat-error *ngIf="userEmail.errors?.['pattern']">
+                   Enter A valid Email ID
+               </mat-error>
+               
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field appearance="outline" class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput required type="password" placeholder="password"  name="userPassword"  #userPassword="ngModel" [(ngModel)]="user.userPassword" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+                <mat-error *ngIf="userPassword?.errors?.['required']">
+                    Password is required
+                 </mat-error>
+                 <mat-error *ngIf="userPassword?.errors?.['pattern']">
+                    Enter a valid Password
+                 </mat-error>
+            </mat-form-field>
+
+            <br>
+
+            <button class="sub" mat-button color="primary" [disabled]="!orderForm.valid" (click)="validateUserCode()" matDialogClose>Submit</button>
+
+            <p> If you are a new user , Click here to  <a routerLink="/register" mat-dialog-close>Register</a></p>
+        </form>
+    
+    
+    </div>
+
+   

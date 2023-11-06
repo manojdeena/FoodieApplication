@@ -1,0 +1,15 @@
+.login {
+    margin: 5%;
+    padding-top: 10%;
+    padding-left: 3%;
+    align-items: center;
+}
+
+
+.sub{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+}

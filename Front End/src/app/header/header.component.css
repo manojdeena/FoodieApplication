@@ -1,0 +1,32 @@
+#button {
+
+    margin-left: 83%;
+    color: white;
+}
+
+#anchor {
+    text-decoration: none;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: xx-large;
+
+}
+
+.raised-Button {
+    margin-left: -40px;
+    width: 5px;
+    padding: 20px;
+}
+
+#profile{
+  margin-left: 100%;
+  color: white;
+}
+.width{
+    
+    background-color: #e33744 ;
+    
+}
+

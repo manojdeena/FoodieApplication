@@ -1,0 +1,32 @@
+.container-two{
+  
+  margin: 15%;
+  margin-top: 10%;
+  text-align: center;
+}
+#heading{
+  text-align: center ;
+}
+.inline,.inline-two{
+  margin-left: 30px;
+}
+.sub{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#card{
+  width:700px;
+ margin-left: 420px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.head{
+  margin-left: 46%;
+  padding-top: 100px;
+  margin-bottom: -120px;
+  font-family: Titillium Web
+}
+.field{
+  width: 55%;
+  margin-top: 20px;
+}

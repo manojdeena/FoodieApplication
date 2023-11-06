@@ -1,0 +1,23 @@
+.search-container {
+    margin-left: 58em;
+    padding-top: 35px;
+    width: 550px;
+  
+}
+.container-two{
+    width: 45%;
+
+}
+.material-symbols-outlined{
+    padding-top: 5px;
+}
+#material{
+    margin-top: 0px;
+}
+#icon{
+    float: right;
+    margin-top: -20px;
+}
+#searchquery{
+    color: black;
+}

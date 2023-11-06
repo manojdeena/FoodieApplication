@@ -1,0 +1,49 @@
+<div class="row">
+<!-- <div id="location">
+    <mat-form-field appearance="outline" >
+        <mat-label >Location</mat-label>
+        <mat-select [(ngModel)]="searchInput" id="form" >
+            <mat-option value="Bengaluru" (click)="onfilter()">chennai</mat-option>
+            <mat-option value="Kochi" (click)="onfilter()">Kochi</mat-option>
+            <mat-option value="Tirupati" (click)="onfilter()">Tirupati</mat-option>
+            <mat-option value="Mumbai" (click)="onfilter()">Mumbai</mat-option>
+            <mat-option value="Chennai" (click)="onfilter()">Chennai</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div> -->
+
+
+<div id="filter">
+    <mat-button-toggle-group id="category" color="accent" name="favoriteColor"  [(ngModel)]="searchInput" >
+     <mat-button-toggle value="Bengaluru" (click)="onfilter()">Bengaluru</mat-button-toggle>
+     <mat-button-toggle value="Kochi" (click)="onfilter()">Kochi</mat-button-toggle>
+     <mat-button-toggle value="Tirupati" (click)="onfilter()">Tirupati</mat-button-toggle>
+     <mat-button-toggle  value="Mumbai" (click)="onfilter()">Mumbai</mat-button-toggle>
+     <mat-button-toggle value="Chennai" (click)="onfilter()">Chennai</mat-button-toggle>
+     </mat-button-toggle-group>   
+     
+ </div>
+
+
+<app-search (searchEvent)="searchRestaurant($event)"></app-search>
+
+
+
+<div id="restaurant" class=" row ps-5 ">
+    <mat-card class="example-card mb-4 lg-7" *ngFor="let restaurant of restaurant" routerLink="/restaurant/{{restaurant.restaurantId}}">
+        <img id="img" mat-card-image src="../../assets/images/{{restaurant.cuisine}}.jpg"
+            style="width: 275px; height: 275px;">
+        <mat-card-header>
+            <mat-card-title>{{restaurant.restaurantName}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p class="content">{{restaurant.rating}} <img mat-card-image src="../../assets/star.png"
+                    style="width: 3.2; height: 1em;"></p>
+            <p class="content-two">{{restaurant.cuisine}}</p>
+            <p class="content-three">{{restaurant.address?.area}} </p>
+
+        </mat-card-content>
+    </mat-card>
+
+</div>
+</div>

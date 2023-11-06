@@ -1,0 +1,44 @@
+{
+    "restaurantData":[
+        {
+            "restaurantId": 1,
+            "restaurantName": "Bangalore Bites",
+            "location": "Bengaluru",
+            "cuisine": "South Indian",
+            "image":"briyani",
+            "rating":5,
+            "address": {
+                "area": "Indiranagar",
+                "state": "Karnataka",
+                "zipcode": 560008
+            },
+            "dishList": [
+                {
+                    "dishId": 1,
+                    "dishName": "Masala Dosa",
+                    "dishcost": 120
+                },
+                {
+                    "dishId": 2,
+                    "dishName": "Idli Sambhar",
+                    "dishcost": 80
+                },
+                {
+                    "dishId": 3,
+                    "dishName": "Rava Upma",
+                    "dishcost": 90
+                },
+                {
+                    "dishId": 4,
+                    "dishName": "Vada",
+                    "dishcost": 60
+                },
+                {
+                    "dishId": 5,
+                    "dishName": "Puliyogare",
+                    "dishcost": 150
+         }
+        ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+.example-card {
+    max-width: 300px;
+    height: 325px;
+    text-align: center;
+    margin-left: 60px;
+    border-radius: 5px;
+    transition: transform 0.3 ease;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.img{
+    align-items: start;
+    margin-left: -13px;
+}
+h1{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+.footer{
+    margin-bottom: 450px;
+}

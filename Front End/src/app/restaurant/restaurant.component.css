@@ -1,0 +1,76 @@
+.content {
+    float: right;
+    margin-top: -9%;
+}
+
+
+.content-two {
+    text-align: left;
+}
+
+.buttom{
+    margin-top: -30px;
+    height: 25px;
+    margin-left: 80%;
+    margin-top: -25%;
+}
+
+#card-one:hover{
+    transform: scale(1.03);
+}
+
+
+h2 {
+    float: right;
+    margin-top: 35px;
+}
+
+.content {
+    float: right;
+    margin-top: -5%;
+}
+
+.card {
+    max-width: 750px;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+.content-two {
+    text-align: left;
+}
+
+#card-one {
+    width: 200px;
+    margin-left: 5%;
+    transition: transform 0.3 ease;
+}
+#card-two {
+    /* width: 200px; */
+    margin-left: 5%;
+    margin-top: 80px;
+    margin-bottom: -30px;   
+}
+
+h2 {
+    /* margin-left: 5px; */
+    margin-right: 55px;
+
+    margin-top: -2%;
+}
+.img{
+    border-radius: 10px;
+}
+
+#star {
+    padding-bottom: 2px;
+}
+
+.example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    margin-left: 80%;
+    margin-top: -8%;
+}
